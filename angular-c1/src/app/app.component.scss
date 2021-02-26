@@ -21,13 +21,14 @@
     align-items: center;
   }
 .content-custom {
-    display: flex;
-    margin: 40px auto 32px;
-    padding: 16px;
-    max-width: 600px;
-    flex-direction: row;
+    display:flex;
+    flex-wrap:wrap;
+    padding-right:12.5rem;
+    padding-left:12.5rem;
+    margin-right:auto;
+    margin-left:auto;
+    align-items: center;
     justify-content: center;
-    background-color: yellow;
 }
 .content-custom-cart {
     display: flex;
@@ -54,9 +55,8 @@
 }
 
 .card {
-    max-width: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
+    max-width: 250px;
+    margin: 10px 10px 10px 10px;
 }
 
 .btn {
@@ -70,3 +70,12 @@
 table {
     width: 100%;
 }
+
+.green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  

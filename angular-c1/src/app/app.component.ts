@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  toggle = true;
+  status = "Enable";
   title = 'angular-c1';
 
 
@@ -17,6 +20,11 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.getBooks();
+    this.enableDisableRule();
+  }
+  enableDisableRule() {
+    this.toggle = !this.toggle;
+    this.status = this.toggle ? "Enable" : "Disable";
   }
 
   getBooks()
