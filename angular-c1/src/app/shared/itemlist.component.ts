@@ -1,27 +1,15 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  title = 'angular-c1';
-
-
-  data:any=[];
-
-  constructor(
-
-  ){ }
-
-  ngOnInit(): void {
-    this.getBooks();
+interface Item {
+    name: string;
+    image: string;
+    price: number;
+    addedToCart: boolean;
+    desc: string;
   }
-
-  getBooks()
-  {
-    this.data = [
+  
+  class ItemListComponent {
+  
+    // use this mock data
+    items: Item[] = [
       {
         name: 'Kokorowatari',
         image: 'https://i.imgur.com/POR1PVd.jpg',
@@ -76,8 +64,6 @@ export class AppComponent {
         desc: `It was too big to be called a sword. Massive, thick, heavy, and far too rough.
         Indeed, it was a heap of raw iron.
         The Dragon Slayer is the massive sword Guts has wielded as his signature weapon since surviving the Eclipse.`
-      }
+      },
     ];
   }
-
-}

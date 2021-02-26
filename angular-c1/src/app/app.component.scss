@@ -24,8 +24,10 @@
     display: flex;
     margin: 40px auto 32px;
     padding: 16px;
-    max-width: 80%;
+    max-width: 600px;
     flex-direction: row;
+    justify-content: center;
+    background-color: yellow;
 }
 .content-custom-cart {
     display: flex;
@@ -52,7 +54,9 @@
 }
 
 .card {
-    width: 200px;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn {

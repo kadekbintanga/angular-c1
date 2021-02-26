@@ -6,9 +6,9 @@
     <h3>Best Quality for Sword Master</h3>
   </div>
   <div class="content-custom">
-    <mat-card class="card">
+    <mat-card class="card" *ngFor = "let d of data">
       <mat-card-header>
-        <mat-card-title>Name of Sword</mat-card-title>
+        <mat-card-title>{{d.title}}</mat-card-title>
       </mat-card-header>
       <img mat-card-image src="../assets/image/Lostvayne.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content>
