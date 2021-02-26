@@ -1,15 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./app.component.scss">
-  <title>Angular Challenge 1</title>
-</head>
 <body>
-  <div class="toolbar">
+  <div class="toolbar" role="banner">
     <h1>WELCOME TO SWORD SHOP</h1>
   </div>
-</body>
-</html>
+  <div class="content" role="main">
+    <h3>Best Quality for Sword Master</h3>
+  </div>
+  <div class="content-custom">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Name of Sword</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="../assets/image/Lostvayne.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+
+        <h2>Proce</h2>
+      </mat-card-content>
+      <mat-card-actions style="text-align: center;">
+        <button mat-button color="primary"><i class="fa fa-cart-plus" style="font-size: 200%; margin-right: 10px;"></i>Add to Cart</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="content-custom-cart">
+    <h1><b>Added to Cart :</b></h1>
+  </div>
+
+  <div class="content-custom-table">
+    <table>
+      <thead>
+        <th style="font-size: 150%; text-align: left;">Nama Barang</th>
+        <th style="font-size: 150%; text-align: right;">Harga</th>
+      </thead>
+      <thead style="border-top: 10px; border-color: black;">
+        <th style="font-size: 150%; text-align: left;">Total</th>
+        <th style="font-size: 150%; text-align: right;">Harga</th>
+      </thead>
+    </table>
+  </div>
+  <div class="content-custom-table">
+    <button class="btn">Buy</button>
+  </div>
