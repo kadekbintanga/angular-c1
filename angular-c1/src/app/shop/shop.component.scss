@@ -1,4 +1,14 @@
 
+
+.content{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content h1{
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .toolbar {
   position:absolute;
   top: 0;
@@ -39,7 +49,7 @@
 }
 
 body {
-  background-color: #cccccc;
+  height: max-content;
 }
 
 .container {
@@ -47,6 +57,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 100px;
+
 }
 
 h1 {
