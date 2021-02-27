@@ -11,7 +11,6 @@ export class AppComponent {
   status = "Enable";
   title = 'angular-c1';
 
-
   data:any=[];
 
   constructor(
@@ -20,11 +19,14 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.getBooks();
-    this.enableDisableRule();
   }
-  enableDisableRule() {
-    this.toggle = !this.toggle;
-    this.status = this.toggle ? "Enable" : "Disable";
+  changeAdd(i: any) {
+    console.log(this.data[i].addedToCart);
+    if (this.data[i].addedToCart == false){
+      this.data[i].addedToCart= true;
+    }else {
+      this.data[i].addedToCart = false;
+    }
   }
 
   getBooks()

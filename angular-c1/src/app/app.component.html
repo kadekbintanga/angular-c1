@@ -6,7 +6,7 @@
     <h3>Best Quality for Sword Master</h3>
   </div>
   <div class="content-custom">
-    <mat-card class="card" *ngFor = "let d of data">
+    <mat-card class="card" *ngFor = "let d of data; let i=index">
       <mat-card-header>
         <mat-card-title>{{d.name}}</mat-card-title>
       </mat-card-header>
@@ -17,9 +17,15 @@
         </p>
 
         <h2>{{d.price}}</h2>
+
       </mat-card-content>
-      <mat-card-actions style="text-align: center;">
-        <button mat-button color="primary" (click)="enableDisableRule()" [ngClass]="{'green' : toggle, 'red': !toggle}"><i class="fa fa-cart-plus" style="font-size: 200%; margin-right: 10px;"></i>Add to Cart</button>
+      <mat-card-actions style="text-align: center;" >
+        <div *ngIf ="d.addedToCart == false">
+          <button mat-button color="primary" (click)="changeAdd(i)"><i class="fa fa-cart-plus" style="font-size: 200%; margin-right: 10px;"></i>Add to Cart</button>
+        </div>
+        <div *ngIf ="d.addedToCart == true">
+          <button mat-button color="primary" (click)="changeAdd(i)"><i class="fa fa-cart-plus" style="font-size: 200%; margin-right: 10px; background-color: chartreuse;"></i>Added to Cart</button>
+        </div>
       </mat-card-actions>
     </mat-card>
   </div>
