@@ -1,14 +1,11 @@
-interface Item {
+export interface Item {
     name: string;
     image: string;
     price: number;
     addedToCart: boolean;
     desc: string;
   }
-  
-  class ItemListComponent {
-  
-    // use this mock data
+  export class ItemList {
     items: Item[] = [
       {
         name: 'Kokorowatari',
@@ -67,3 +64,4 @@ interface Item {
       },
     ];
   }
+  
