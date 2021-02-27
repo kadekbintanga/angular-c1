@@ -12,6 +12,8 @@ export class AppComponent {
   title = 'angular-c1';
 
   data:any=[];
+  totalShop: number = 0;
+  money: number = 1000;
 
   constructor(
 
@@ -21,7 +23,6 @@ export class AppComponent {
     this.getBooks();
   }
   changeAdd(i: any) {
-    console.log(this.data[i].addedToCart);
     if (this.data[i].addedToCart == false){
       this.data[i].addedToCart= true;
     }else {
